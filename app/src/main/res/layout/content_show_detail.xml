@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.akashdeep.tvshowguide.Activities.ShowDetailActivity"
+    tools:showIn="@layout/activity_show_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvInitialRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Initial Release : "/>
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_below="@id/tvInitialRelease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Genre : "/>
+
+        <TextView
+            android:id="@+id/tvUserScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGenre"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="User Score : "/>
+
+        <TextView
+            android:id="@+id/tvProductionStatus"
+            android:layout_below="@id/tvUserScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Production Status : "/>
+
+        <TextView
+            android:id="@+id/tvEpisodes"
+            android:layout_below="@id/tvProductionStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Number of episodes : "/>
+
+        <TextView
+            android:id="@+id/tvSeasons"
+            android:layout_below="@id/tvEpisodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="Number of seasons : "/>
+
+        <TextView
+            android:id="@+id/tvOverviewTitle"
+            android:layout_below="@id/tvSeasons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/activity_small_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:text="@string/showdetail_overview_title"/>
+
+        <TextView
+            android:id="@+id/tvOverview"
+            android:layout_below="@id/tvOverviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_small_margin"
+            android:layout_marginStart="@dimen/overview_margin_start"
+            android:textAppearance="?android:attr/textAppearance"
+            android:text="@string/showdetail_overview_title"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
